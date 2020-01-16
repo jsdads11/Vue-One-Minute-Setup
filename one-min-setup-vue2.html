@@ -1,0 +1,33 @@
+<html>
+<!-- From Vue.js 2 Web Project Development -->
+<head>
+	<meta charset="utf-8">
+	<title>Vue Project Guide setup</title>
+<head>
+<body>
+
+<!-- Include the library in the page -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+	<!-- Some HTML --> 
+	<div id="root">
+		<p>{{ message }}</p>
+	</div>
+
+	<!-- Some JavaScript --> 
+	<script>
+	// New Vue instance
+var app = new Vue({
+		// CSS selector of the root DOM element
+		el: '#root',
+		// Some data
+		data () {
+			return { message: 'Hello Vue.js!',}
+		},
+	})
+
+		console.log('Yes! We are using Vue version', Vue.version)
+	</script>
+
+</body>
+</html>
